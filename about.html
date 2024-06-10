@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Setrika</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+        .container {
+            height: 100%;
+        }
+        .text-justify {
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Simulasi Setrika</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link"  href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="rumus.html">Rumus</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="simulasi.html">Simulasi</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="about.html">Tentang Kami</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <!--Navbar END-->
+
+    <!--Hero-->
+    <div class="container py-4 mt-5">
+        <div class="p-5 mb-4 bg-body-tertiary rounded-3">
+            <div class="container-fluid py-5">
+                <h1 class="display-5 fw-bold">Tentang Kami</h1>
+                <p class="col-md-8 fs-4">Kami adalah lima mahasiswa dari Universitas Siliwangi, Fakultas Teknik, Program Studi Informatika. Kami berkomitmen untuk mengembangkan solusi teknologi inovatif dan berkualitas.</p>
+                <ul class="col-md-8 fs-5">
+                    <li>Akhdan Rafif Nugraha (NPM: 227006155)</li>
+                    <li>Agis Muhammad Nursyam (NPM: 227006157)</li>
+                    <li>Shilla Hanipa Amalia (NPM: 227006154)</li>
+                    <li>Jauza Hasna Dalila (NPM: 227006145)</li>
+                    <li>Risma (NPM: 227006144)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+
+    <!--Hero-->
+
+    <!--END OF BODY-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        function updateMemberDetails() {
+            var select = document.getElementById("teamMemberSelect");
+            var selectedOption = select.options[select.selectedIndex];
+            var imgSrc = selectedOption.getAttribute("data-img");
+            var instagramLink = selectedOption.getAttribute("data-instagram");
+            
+            document.getElementById("memberImage").src = imgSrc;
+            document.getElementById("instagramLink").href = instagramLink;
+        }
+    </script>
+</body>
+</html>
